@@ -44,12 +44,11 @@
     "semver": "1.0.x",
     "pre-commit": "0.0.x"
   },
-  "pre-commit": ["test", "update"],
+  "pre-commit": ["test"],
   "scripts": {
     "test": "mocha $(find test -name '*.test.js')",
     "qa": "mocha --ui exports $(find test -name '*.qa.js')",
-    "update": "node ./bin/update.js",
-    "prepublish": "npm run update"
+    "update": "node ./bin/update.js"
   },
   "dependencies": {
     "lru-cache": "2.2.x"
