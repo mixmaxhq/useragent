@@ -3,7 +3,7 @@
 /**
  * This is where all the magic comes from, specially crafted for `useragent`.
  */
-var regexps = require('./lib/regexps');
+var regexps = require('./lib/regexps-majorBrowsers');
 
 /**
  * Reduce references by storing the lookups.
